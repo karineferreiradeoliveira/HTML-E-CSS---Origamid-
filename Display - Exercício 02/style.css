@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    text-decoration: none;
+}
+html {
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    text-align: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    background-color:#111 ;
+    color: white;
+    padding: 30px;
+    line-height: 1.8;
+    margin: 20px 0;
+}
+.item p{
+    color: #b2b2b2;
+}
+.numeros {
+    color: #febe01;
+}
+
+a {
+
+   background-color: #febe01;
+   color: #111; 
+   padding: 10px;
+   border-radius: 4px;
+   display: inline-block;
+   font-weight: 700;
+}
