@@ -1,10 +1,10 @@
 * {
-    
+    box-sizing: border-box;
 }
 
 body {
     font-family: Arial;
-    margin: 40px;
+    margin: 10rem 20rem;
 }
 
 h1, p {
@@ -25,6 +25,7 @@ p{
     gap: 20px;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    
 }
 
 .titulo {
