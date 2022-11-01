@@ -5,6 +5,14 @@
     font-family: Arial;
     text-decoration: none;
 }
+
+ :root {
+    --color-bg-body: white;
+    --color-bg-item:#111;
+    --color-bg-link:#febe01;
+    --color-bg-p:#b2b2b2;
+    --color-text-link:#332200;
+ }
 html {
     display: flex;
     justify-content: center;
@@ -20,23 +28,23 @@ h1 {
     width: 100%;
     max-width: 400px;
     height: 200px;
-    background-color:#111 ;
-    color: white;
+    background-color:var(--color-bg-item) ;
+    color: var(--color-bg-body);
     padding: 30px;
     line-height: 1.8;
     margin: 20px 0;
 }
 .item p{
-    color: #b2b2b2;
+    color: var(--color-bg-p);
 }
 .numeros {
-    color: #febe01;
+    color: var(--color-bg-link);
 }
 
 a {
 
-   background-color: #febe01;
-   color: #332200; 
+   background-color: var(--color-bg-link);
+   color: var(--color-text-link); 
    padding: 10px;
    border-radius: 4px;
    display: inline-block;
