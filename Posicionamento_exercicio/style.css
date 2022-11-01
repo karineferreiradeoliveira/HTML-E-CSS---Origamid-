@@ -3,6 +3,7 @@
     padding: 0;
     font-family: arial;
     text-decoration: none;
+    box-sizing: border-box;
 
 }
 :root {
@@ -57,6 +58,13 @@ p {
 
 .info {
     background-color: var(--white);
+    padding: 40px;
+    text-align: right;
+    display: grid;
+    align-content: center;
+    gap: 20px;
+    justify-items: end;
+    
 }
 
 .btn {
@@ -64,14 +72,46 @@ p {
     padding: 15px;
     color: var(--white);
     border-radius: 4px;
+    text-transform: uppercase;
+
+}
+
+.detalhe {
+    width: 60px;
+    height: 4px;
+    background-color: var(--vermelho);
+    position: absolute;
+    top: 340px;
+    right: 1035px;
+    
 }
 .subtitulo {
     font-size: 64px;
     color: var(--cinza-500);
+    text-transform: uppercase;
+    text-align: right;
+    padding: 40px;
+    align-self: center;
 } 
-.vantagens-info {
+.vantagens {
     background-color: var(--white);
+    padding: 40px;
 }   
-   
-    
+
+.vantagens-info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px 20px;
+    padding: 20px;
+}
+.vantagens-info p {
+    grid-column: 2;
+}
+
+.rodape {
+    background-color: var(--white);
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+}
 
