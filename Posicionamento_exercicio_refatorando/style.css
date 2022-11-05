@@ -32,25 +32,22 @@ p {
     line-height: 1.3;
 }
 
-.logo {
-    display: flex;
-    justify-content: center;
-    padding: 2.5rem;
+.header {
+    display: grid;
+    justify-items: center;
+    gap: 3.5rem;
 }
-.nav-menu {
+
+ul{
     display: flex;
     flex-wrap: wrap;
     gap: 1.25rem;
     justify-content: center;
+    list-style: none;
+
 }
 
-.nav-menu li:focus{
-background-color: #900;
-color: #ee2211;
-}
-
-
-.nav-menu li a {
+.nav-menu a {
     background-color: var(--white);
     padding: 0.63rem 1.88rem;
     border-radius: 4px;
@@ -59,9 +56,14 @@ color: #ee2211;
     color: var(--black);
     align-items: center;
     margin-bottom: 2.5rem;
-    
+    display: block;
+    border: 2px solid var(--white);
+    /* bordar white ou transparent
+    no link ajuda items n pularem no :hover */
 }
-
+ .nav-menu a:hover {
+    border-color: var(--vermelho-500);
+ }
 
 /* items */
 .conteudo{
@@ -96,18 +98,22 @@ color: #ee2211;
     font-weight: 600;
 }
 
-.detalhe {
+.info::before {
     content: "";
     width: 60px;
     height: 4px;
     background-color: var(--vermelho-500);
     position: absolute;
-    top: 340px;
-    right: 1035px;
+    top: 390px;
+    right: 1025px;
     
+}
+.info h1 {
+    font-size: 2rem;
 }
 .subtitulo {
     background-image: url("./assets/onda.svg");
+    
     font-size: 4rem;
     color: var(--cinza-500);
     text-transform: uppercase;
@@ -125,6 +131,12 @@ color: #ee2211;
     grid-template-columns: auto 1fr;
     gap: 0.63rem 1.25rem;
     padding: 1.25rem;
+    border-left: 4px solid transparent;
+}
+
+.vantagens-info:hover{
+    transition: 0.3s;
+    border-color: var(--vermelho-500);
 }
 
 .vantagens-info:nth-child(odd){

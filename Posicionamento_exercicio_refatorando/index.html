@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Posicionamento - Exercício</title>
-  </head>
-  <body>
-    <nav>
-      <div class="logo">
-        <a href="#">
-          <img src="./assets/bikcraft.svg" alt="logotipo bikcraft Nimbus Stark" />
-        </a>
-      </div>
-  
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Posicionamento - Exercício</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo"></div>
+    <a href="#">
+      <img src="./assets/bikcraft.svg" alt="logotipo bikcraft Nimbus Stark" />
+    </a>
+    </div>
+
+    <nav aria-label="Primaria">
       <ul class="nav-menu">
         <li><a href="#">sobre</a></li>
         <li><a href="#">produtos</a></li>
@@ -22,13 +25,15 @@
         <li><a href="#">contato</a></li>
       </ul>
     </nav>
-   
-    <!-- fim menu -->
+  </header>
+  <!-- fim menu -->
 
-    <main class="conteudo">
-      <div class="info">
-        <div class="detalhe"></div>
-        <h1>Bicicletas feitas a Mão</h1>
+  <main >
+
+    <article class="conteudo">
+      <div class="info" aria-labelledby="label-introducao">
+       
+        <h1 id="label-introducao">Bicicletas feitas a Mão</h1>
         <p>
           A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela
           vem equipada com os melhores acessórios da marca.
@@ -37,31 +42,36 @@
       </div>
 
       <img src="./assets/bicicleta.jpg" alt="bicicleta" />
+    </article>
 
-      <h2 class="subtitulo">Vantagens Bikecraft</h2>
+    <article class="conteudo" aria-labelledby="label-vantagens">
+      <h2 class="subtitulo" id="label-vantagens">Vantagens Bikecraft</h2>
 
-      <div class="vantagens">
-        <div class="vantagens-info">
+      <ul class="vantagens">
+        <li class="vantagens-info">
           <img src="./assets/eletrica.svg" alt="" />
           <h3>Motor Elétrico</h3>
           <p>Permite você viajar distâncias inimaginaveis com a sua bike.</p>
-        </div>
-        <div class="vantagens-info">
+        </li>
+        <li class="vantagens-info">
           <img src="./assets/velocidade.svg" alt="" />
           <h3>40km/h</h3>
           <p>A mais rápida bicicleta elétrica disponível hoje no mercado.</p>
-        </div>
-        <div class="vantagens-info">
+        </li>
+        <li class="vantagens-info">
           <img src="./assets/rastreador.svg" alt="" />
           <h3>Rastreador</h3>
           <p>Rastreador e sistema anti-furto para garantir o seu sossego.</p>
-        </div>
-      </div>
-    </main>
+        </li>
+      </ul>
+  </main>
+  </article>
 
-    <!-- fim conteudo -->
-    <footer class="rodape">
-      <p>Bikcraft. Alguns Direitos Reservados.</p>
-    </footer>
-  </body>
+
+  <!-- fim conteudo -->
+  <footer class="rodape">
+    <p>Bikcraft. Alguns Direitos Reservados.</p>
+  </footer>
+</body>
+
 </html>
