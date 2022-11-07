@@ -58,7 +58,7 @@ ul{
     margin-bottom: 2.5rem;
     display: block;
     border: 2px solid var(--white);
-    /* bordar white ou transparent
+    /* border white ou transparent
     no link ajuda items n pularem no :hover */
 }
  .nav-menu a:hover {
