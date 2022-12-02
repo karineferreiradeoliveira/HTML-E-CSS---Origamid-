@@ -97,15 +97,17 @@ ul{
     background-color:var(--vermelho-800);
     font-weight: 600;
 }
-
+.info {
+    position: relative;
+}
 .info::before {
     content: "";
     width: 60px;
     height: 4px;
     background-color: var(--vermelho-500);
     position: absolute;
-    top: 390px;
-    right: 1025px;
+    top: 25px;
+    right: -30px;
     
 }
 .info h1 {
